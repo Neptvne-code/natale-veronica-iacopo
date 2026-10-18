@@ -1,0 +1,9 @@
+services:
+  - type: web
+    runtime: static
+    name: natale-veronica-iacopo
+    staticPublishPath: .
+    headers:
+      - path: /*
+        name: Cache-Control
+        value: no-cache
